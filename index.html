@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -15,47 +15,37 @@
   </head>
   <body>
     <header class="hero">
-      <div class="hero-header">
-        <div class="hero-logo">design.crimes</div>
-        <button class="hero-cta" data-open-form>report a crime</button>
-      </div>
-      <div class="hero-content">
-        <p class="hero-subheadline">Where creativity meets questionable judgment.</p>
-        <p class="hero-body">
-          A public archive of the world's most chaotic, unnecessary, and downright illegal design decisions.
-        </p>
-      </div>
+      <div class="hero-logo">design.crimes</div>
+      <p class="hero-tagline">WHERE CREATIVITY MEETS QUESTIONABLE JUDGMENT</p>
+      <h1 class="hero-heading">A public archive of the world's most chaotic, unnecessary, and downright illegal design decisions.</h1>
+      <button class="hero-cta" data-open-form>report a crime →</button>
     </header>
 
     <main>
       <section aria-label="Community submissions" class="crime-board">
-        <div class="section-heading">
-          <p class="eyebrow">Crime Board</p>
-          <h2>Recent Offenders</h2>
-          <p>A combined gallery of all known offenses.</p>
-        </div>
+        <h2 class="gallery-heading">A gallery of all known offenses.</h2>
         <ul class="submission-grid" id="submission-grid">
           <li
             class="submission-card"
             tabindex="0"
             role="button"
-            aria-label="View details for Infinite Cookie Pop-ups"
-            data-title="Infinite Cookie Pop-ups"
-            data-category="UX/UI"
-            data-offender="Aggressive Consent Council"
+            aria-label="View details for 2 Fonts on One Poster"
+            data-title="2 Fonts on One Poster"
+            data-category="Graphic Design"
+            data-offender="Font Hoarders Anonymous"
             data-submitter="Anonymous #042"
             data-reported-label="3 days ago"
             data-reported-iso="2025-11-14T09:00:00Z"
-            data-description="Every action triggers another consent modal. Nothing is usable until you accept all 19 trackers."
-            data-better="Consolidated disclosures, one polite prompt, zero extortion."
-            data-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+            data-description="Because they're all pretty. A crime worse than homicide in some design studios."
+            data-better="One font, maximum two. Restraint is a virtue."
+            data-image="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=1200&q=80"
           >
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Example bad interface" />
+              <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&q=80" alt="Poster with multiple fonts" />
             </div>
             <div class="card-body">
-              <h3>Infinite Cookie Pop-ups</h3>
-              <p>Every action triggers another consent modal. Nothing is usable until you accept all 19 trackers.</p>
+              <h3>2 Fonts on One Poster</h3>
+              <p>"Because they're all pretty." A crime worse than homicide in some design studios.</p>
               <div class="card-meta">
                 <span>Submitted by <strong>Anonymous #042</strong></span>
                 <time datetime="2025-11-14">Reported: 3 days ago</time>
@@ -66,23 +56,23 @@
             class="submission-card"
             tabindex="0"
             role="button"
-            aria-label="View details for Pastel-on-Pastel Text"
-            data-title="Pastel-on-Pastel Text"
-            data-category="Graphic Design"
-            data-offender="Moodboard Collective"
+            aria-label="View details for Furniture That Looks Cool But Is Physically Hostile"
+            data-title="Furniture That Looks Cool But Is Physically Hostile"
+            data-category="Product Design"
+            data-offender="Aesthetic Over Comfort Co."
             data-submitter="Agent Calder"
             data-reported-label="1 week ago"
             data-reported-iso="2025-11-10T15:30:00Z"
-            data-description="Important metrics hidden in 2% contrast. Accessibility violations everywhere."
-            data-better="Contrast ratios above 7:1 and a vow to break up with #FAD."
-            data-image="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&q=80"
+            data-description="Chairs that look like art but feel like punishment."
+            data-better="Form follows function. Comfort is not optional."
+            data-image="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=1200&q=80"
           >
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Unreadable app interface" />
+              <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=600&q=80" alt="Uncomfortable modern furniture" />
             </div>
             <div class="card-body">
-              <h3>Pastel-on-Pastel Text</h3>
-              <p>Important metrics hidden in 2% contrast. Accessibility violations everywhere.</p>
+              <h3>Furniture That Looks Cool But Is Physically Hostile</h3>
+              <p>Chairs that look like art but feel like punishment.</p>
               <div class="card-meta">
                 <span>Submitted by <strong>Agent Calder</strong></span>
                 <time datetime="2025-11-10">Reported: 1 week ago</time>
@@ -93,23 +83,23 @@
             class="submission-card"
             tabindex="0"
             role="button"
-            aria-label="View details for Signage Labyrinth"
-            data-title="Signage Labyrinth"
-            data-category="Branding"
-            data-offender="Airport Wayfinding Guild"
+            aria-label="View details for Over-designed Remotes"
+            data-title="Over-designed Remotes"
+            data-category="Product Design"
+            data-offender="Button Overload Industries"
             data-submitter="Anonymous #118"
             data-reported-label="18 hours ago"
             data-reported-iso="2025-11-16T20:45:00Z"
-            data-description="Arrow pointing left, text says right, map shows downstairs. Choose wisely?"
-            data-better="Point viewers in literally one direction at a time."
-            data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+            data-description="50 buttons, 3 you actually use. The opposite of intuitive."
+            data-better="Minimal controls. Maximum clarity. Less is more."
+            data-image="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1200&q=80"
           >
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Confusing signage" />
+              <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=600&q=80" alt="Complex remote control with many buttons" />
             </div>
             <div class="card-body">
-              <h3>Signage Labyrinth</h3>
-              <p>Arrow pointing left, text says right, map shows downstairs. Choose wisely?</p>
+              <h3>Over-designed Remotes</h3>
+              <p>50 buttons, 3 you actually use. The opposite of intuitive.</p>
               <div class="card-meta">
                 <span>Submitted by <strong>Anonymous #118</strong></span>
                 <time datetime="2025-11-16">Reported: 18 hours ago</time>
@@ -119,23 +109,19 @@
         </ul>
       </section>
 
-      <p class="case-closed-note">Case closed. For now.</p>
+      <p class="case-closed-note">CASE CLOSED. FOR NOW.</p>
       <section aria-label="Report a new design crime" class="submit-invite">
-        <div class="section-heading">
-          <p class="eyebrow">Submit a Crime</p>
-          <h2>Know a crime? Report it anonymously.</h2>
-        </div>
+        <h2 class="submit-heading">Know a crime? Report it anonymously.</h2>
         <div class="submit-copy">
-          <p>Seen something outrageous?</p>
-          <p>Got betrayed by a door?</p>
+          <p>Seen something outrageous? Got betrayed by a door?</p>
           <p>Encountered UI so confusing it qualifies as psychological warfare?</p>
           <p>The Design Crime Unit needs your testimony.</p>
         </div>
-        <button class="submit-cta" data-open-form>File Report</button>
+        <button class="submit-cta" data-open-form>report a crime →</button>
       </section>
     </main>
     <footer>
-      <p>Return tomorrow for more crimes, justice, and questionable kerning.</p>
+      <p>RETURN TOMORROW FOR MORE CRIMES, JUSTICE, AND QUESTIONABLE KERNING.</p>
     </footer>
     <div class="crime-modal" id="crime-modal" aria-hidden="true">
       <div class="crime-modal__backdrop" data-close-modal></div>
