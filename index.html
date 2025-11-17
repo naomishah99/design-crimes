@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Crimes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-header">
+        <div class="hero-logo">design.crimes</div>
+        <button class="hero-cta" data-open-form>report a crime</button>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subheadline">Where creativity meets questionable judgment.</p>
+        <p class="hero-body">
+          A public archive of the world's most chaotic, unnecessary, and downright illegal design decisions.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section aria-label="Community submissions" class="crime-board">
+        <div class="section-heading">
+          <p class="eyebrow">Crime Board</p>
+          <h2>Recent Offenders</h2>
+          <p>A combined gallery of all known offenses.</p>
+        </div>
+        <ul class="submission-grid" id="submission-grid">
+          <li
+            class="submission-card"
+            tabindex="0"
+            role="button"
+            aria-label="View details for Infinite Cookie Pop-ups"
+            data-title="Infinite Cookie Pop-ups"
+            data-category="UX/UI"
+            data-offender="Aggressive Consent Council"
+            data-submitter="Anonymous #042"
+            data-reported-label="3 days ago"
+            data-reported-iso="2025-11-14T09:00:00Z"
+            data-description="Every action triggers another consent modal. Nothing is usable until you accept all 19 trackers."
+            data-better="Consolidated disclosures, one polite prompt, zero extortion."
+            data-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+          >
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Example bad interface" />
+            </div>
+            <div class="card-body">
+              <h3>Infinite Cookie Pop-ups</h3>
+              <p>Every action triggers another consent modal. Nothing is usable until you accept all 19 trackers.</p>
+              <div class="card-meta">
+                <span>Submitted by <strong>Anonymous #042</strong></span>
+                <time datetime="2025-11-14">Reported: 3 days ago</time>
+              </div>
+            </div>
+          </li>
+          <li
+            class="submission-card"
+            tabindex="0"
+            role="button"
+            aria-label="View details for Pastel-on-Pastel Text"
+            data-title="Pastel-on-Pastel Text"
+            data-category="Graphic Design"
+            data-offender="Moodboard Collective"
+            data-submitter="Agent Calder"
+            data-reported-label="1 week ago"
+            data-reported-iso="2025-11-10T15:30:00Z"
+            data-description="Important metrics hidden in 2% contrast. Accessibility violations everywhere."
+            data-better="Contrast ratios above 7:1 and a vow to break up with #FAD."
+            data-image="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&q=80"
+          >
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80" alt="Unreadable app interface" />
+            </div>
+            <div class="card-body">
+              <h3>Pastel-on-Pastel Text</h3>
+              <p>Important metrics hidden in 2% contrast. Accessibility violations everywhere.</p>
+              <div class="card-meta">
+                <span>Submitted by <strong>Agent Calder</strong></span>
+                <time datetime="2025-11-10">Reported: 1 week ago</time>
+              </div>
+            </div>
+          </li>
+          <li
+            class="submission-card"
+            tabindex="0"
+            role="button"
+            aria-label="View details for Signage Labyrinth"
+            data-title="Signage Labyrinth"
+            data-category="Branding"
+            data-offender="Airport Wayfinding Guild"
+            data-submitter="Anonymous #118"
+            data-reported-label="18 hours ago"
+            data-reported-iso="2025-11-16T20:45:00Z"
+            data-description="Arrow pointing left, text says right, map shows downstairs. Choose wisely?"
+            data-better="Point viewers in literally one direction at a time."
+            data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+          >
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Confusing signage" />
+            </div>
+            <div class="card-body">
+              <h3>Signage Labyrinth</h3>
+              <p>Arrow pointing left, text says right, map shows downstairs. Choose wisely?</p>
+              <div class="card-meta">
+                <span>Submitted by <strong>Anonymous #118</strong></span>
+                <time datetime="2025-11-16">Reported: 18 hours ago</time>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <p class="case-closed-note">Case closed. For now.</p>
+      <section aria-label="Report a new design crime" class="submit-invite">
+        <div class="section-heading">
+          <p class="eyebrow">Submit a Crime</p>
+          <h2>Know a crime? Report it anonymously.</h2>
+        </div>
+        <div class="submit-copy">
+          <p>Seen something outrageous?</p>
+          <p>Got betrayed by a door?</p>
+          <p>Encountered UI so confusing it qualifies as psychological warfare?</p>
+          <p>The Design Crime Unit needs your testimony.</p>
+        </div>
+        <button class="submit-cta" data-open-form>File Report</button>
+      </section>
+    </main>
+    <footer>
+      <p>Return tomorrow for more crimes, justice, and questionable kerning.</p>
+    </footer>
+    <div class="crime-modal" id="crime-modal" aria-hidden="true">
+      <div class="crime-modal__backdrop" data-close-modal></div>
+      <div class="crime-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="crime-modal-title" tabindex="-1">
+        <div class="crime-modal__inner">
+          <span class="crime-modal__tag" data-modal-category>UX/UI</span>
+          <h3 id="crime-modal-title" data-modal-title>Case Title</h3>
+          <ul class="crime-modal__details">
+            <li>
+              <span>Offender</span>
+              <strong data-modal-offender>Unknown</strong>
+            </li>
+            <li>
+              <span>Reported by</span>
+              <strong data-modal-reporter>Anonymous Agent</strong>
+            </li>
+            <li>
+              <span>Reported on</span>
+              <strong data-modal-reported-on>—</strong>
+            </li>
+          </ul>
+          <div class="crime-modal__image" data-modal-image-wrapper>
+            <img src="" alt="" data-modal-image />
+          </div>
+          <div class="crime-modal__section">
+            <p class="crime-modal__section-label">Crime Description</p>
+            <p class="crime-modal__section-body" data-modal-description>This kerning felt like a long-distance relationship.</p>
+          </div>
+          <div class="crime-modal__section">
+            <p class="crime-modal__section-label">What They Would Have Done Better</p>
+            <p class="crime-modal__section-body" data-modal-better>Given the poor letters some personal space, proper alignment, and a therapist.</p>
+          </div>
+          <button class="crime-modal__close" type="button" data-close-modal>
+            Return to Evidence Board
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="form-modal" id="form-modal" aria-hidden="true">
+      <div class="form-modal__backdrop" data-close-form></div>
+      <div class="form-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="form-modal-title" tabindex="-1">
+        <div class="form-modal__inner">
+          <div class="form-modal__header">
+            <p class="eyebrow">Submit a Crime</p>
+            <h3 id="form-modal-title">Know a crime? Report it anonymously.</h3>
+            <div class="form-modal__subcopy">
+              <p>Seen something outrageous?</p>
+              <p>Got betrayed by a door?</p>
+              <p>Encountered UI so confusing it qualifies as psychological warfare?</p>
+              <p>The Design Crime Unit needs your testimony.</p>
+            </div>
+          </div>
+          <form id="submission-form" novalidate>
+            <label>
+              Crime Title
+              <input type="text" name="title" placeholder="The Helvetica Massacre" required />
+            </label>
+            <label>
+              Crime Category
+              <input
+                type="text"
+                name="category"
+                list="crime-categories"
+                placeholder="UX/UI"
+                autocomplete="off"
+                required
+              />
+              <datalist id="crime-categories">
+                <option value="Graphic Design"></option>
+                <option value="Product Design"></option>
+                <option value="Branding"></option>
+                <option value="UX/UI"></option>
+                <option value="Miscellaneous Misconduct"></option>
+              </datalist>
+            </label>
+            <label>
+              Upload Evidence (optional)
+              <span>Image or screenshot.</span>
+              <input type="file" name="image" accept="image/*" />
+            </label>
+            <label>
+              Name of Offender
+              <input type="text" name="offender" placeholder='Coworker? Store? "Adobe"? "We plead the Fifth."' />
+            </label>
+            <label>
+              Name of Law Enforcer (the reporter)
+              <input type="text" name="submittedBy" placeholder="Anonymous, Detective Serif, UX Ranger #404" />
+            </label>
+            <label>
+              Crime Description
+              <span>Tell the story. Be dramatic.</span>
+              <textarea name="description" placeholder="Tell the story. Be dramatic." required></textarea>
+            </label>
+            <label>
+              What Would You Have Done Better?
+              <span>Describe the fix or ideal design alternative.</span>
+              <textarea name="betterPlan" placeholder="Describe the fix or ideal design alternative." rows="3" required></textarea>
+            </label>
+            <button type="submit">File Report</button>
+            <p class="form-success" id="form-success" role="status" aria-live="polite" hidden></p>
+          </form>
+          <button class="form-modal__close" type="button" data-close-form>
+            Return to Evidence Board
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
